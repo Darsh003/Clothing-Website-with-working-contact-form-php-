@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FROST APPARELS</title>
+  <link href="https://unpkg.com/tailwindcss@^2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <style>
+    * {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-200">
+  <!-- Navigation -->
+  <header class="sticky -top-2 bg-blue-200 drop-shadow-xl z-50">
+    <nav class="flex justify-between items-center p-4  mx-auto">
+      <div>
+        <img src="logo.png" alt="logo" width="100px" height="100px" class="cursor-pointer">
+      </div>
+      <div
+        class="nav-links hidden md:flex md:static absolute bg-blue-200 md:min-h-fit min-h-[30vh] left-0 md:w-auto  w-full items-center px-5">
+        <ul class="menu flex md:flex-row font-mono flex-col md:items-center md:gap-[6vw] gap-8">
+          <li class="hover:animate-bounce">
+            <a class="text-blue-800 hover:text-gray-500 font-semibold" href="#home">About</a>
+          </li>
+          <li class="hover:animate-bounce">
+            <a class="text-blue-800 hover:text-gray-500 font-semibold" href="#Products">Products</a>
+          </li>
+          <li class="hover:animate-bounce">
+            <a class="text-blue-800 hover:text-gray-500 font-semibold" href="#Contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex items-center gap-6">
+        <button
+          class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-200 drop-shadow hover:animate-bounce"><a
+            target="_blank" href="https://frost-apparels.blinkstore.in/" style="color: black;">BUY NOW</a></button>
+        <ion-icon onclick="onToggleMenu(this)" name="menu"
+          class="text-3xl cursor-pointer md:hidden hover:animate-spin"></ion-icon>
+      </div>
+  </header>
+  <script>
+    const navLinks = document.querySelector('.nav-links')
+    function onToggleMenu(e) {
+      e.name = e.name === 'menu' ? 'close' : 'menu'
+      navLinks.classList.toggle('hidden')
+      navLinks.classList.toggle('top-[95%]')
+    }
+  </script>
+
+
+  <!-- Hero section -->
+  <section id="home" class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-[3%] py-[10%] md:flex-row flex-col items-center">
+
+      <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <h1 class="title-font font-serif sm:text-4xl text-3xl mb-4 font-medium text-blue-700">Introducing Frost Apparels -
+        </h1>
+        <p class="mb-7 font-serif text-lg leading-relaxed">The ultimate destination for trendy and stylish clothing.
+          Shop our collection of premium quality apparel and elevate your wardrobe to the next level. Browse now and experience the Frost
+          difference.</p>
+        <div class="flex items-center justify-center md:justify-start md:px-4">
+          <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"><a href="#Products">Explore Now</a></button>
+        </div>
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
+      </div>
+    </div>
+  </section>
+
+  <hr class="bg-blue-200 h-1">
+
+  <section id="Products">
+      <div class="container mx-auto px-10">
+        <h2 class="text-2xl font-mono font-bold text-blue-700 text-center my-4">Our Products</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+
+
+          <div
+            class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden cursor-pointer hover:scale-125 transition-all duration-500 hover:z-40">
+            <div class="flex items-end justify-end h-56 w-full bg-cover"
+              style="background-image: url('https://images.unsplash.com/photo-1551963831-b3b1ca40c98e?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=80')">
+            </div>
+            <div class="px-5 py-3">
+              <h3 class="text-gray-700 uppercase">Product Name</h3>
+              <span class="text-gray-500 mt-2">$12</span>
+            </div>
+          </div>
+
+
+          <div
+            class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden cursor-pointer hover:scale-125 transition-all duration-500 hover:z-40">
+            <div class="flex items-end justify-end h-56 w-full bg-cover"
+              style="background-image: url('https://images.unsplash.com/photo-1551963831-b3b1ca40c98e?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=80')">
+            </div>
+            <div class="px-5 py-3">
+              <h3 class="text-gray-700 uppercase">Product Name</h3>
+              <span class="text-gray-500 mt-2">$12</span>
+            </div>
+          </div>
+
+
+          <div
+            class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden cursor-pointer hover:scale-125 transition-all duration-500 hover:z-40">
+            <div class="flex items-end justify-end h-56 w-full bg-cover"
+              style="background-image: url('https://images.unsplash.com/photo-1551963831-b3b1ca40c98e?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=80')">
+            </div>
+            <div class="px-5 py-3">
+              <h3 class="text-gray-700 uppercase">Product Name</h3>
+              <span class="text-gray-500 mt-2">$12</span>
+            </div>
+          </div>
+
+
+          <div
+            class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden cursor-pointer hover:scale-125 transition-all duration-500 hover:z-40">
+            <div class="flex items-end justify-end h-56 w-full bg-cover"
+              style="background-image: url('https://images.unsplash.com/photo-1551963831-b3b1ca40c98e?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=80')">
+            </div>
+            <div class="px-5 py-3">
+              <h3 class="text-gray-700 uppercase">Product Name</h3>
+              <span class="text-gray-500 mt-2">$12</span>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="py-4 flex">
+          <button
+            class="flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"><a
+              target="_blank" href="https://frost-apparels.blinkstore.in/">View More</a></button>
+        </div>
+      </div>
+  </section>
+  <hr class="bg-blue-200 h-1">
+
+
+
+
+  <section id="Contact" class="text-gray-600 body-font relative">
+    <div class="container px-5 py-10 mx-auto">
+        <div class="flex flex-col text-center w-full mb-12">
+            <h1 class="sm:text-3xl font-mono text-2xl font-semibold title-font mb-4 text-blue-700">Contact Us</h1>
+        </div>
+        <div class="lg:w-1/2 md:w-2/3 mx-auto">        
+        <form method="POST" action="#">
+                <div class="flex flex-wrap -m-2">
+                    <div class="p-2 w-1/2">
+                        <div class="relative">
+                            <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                    </div>
+                    <div class="p-2 w-1/2">
+                        <div class="relative">
+                            <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                    </div>
+                    <div class="p-2 w-full">
+                        <div class="relative">
+                            <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                            <textarea id="message" name="message"
+                                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                        </div>
+                    </div>
+                    <div class="p-2 w-full">
+                        <input type="submit" value="SUBMIT" name="submit"
+                            class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                    </div>
+                </div>
+            </form>
+          <div>
+          <?php
+            include("connection.php");
+            if($_POST['submit'])
+            {
+              $name = $_POST['name'];
+              $email = $_POST['email'];
+              $message = $_POST['message'];
+
+              $query = "INSERT INTO contact_details VALUES('$name','$email','$message')";
+              $data = mysqli_query($conn,$query);
+
+              if($data)
+              {
+                echo "data inserted";
+              }
+              else
+              {
+                echo "failed";
+              }
+
+            }
+
+         ?>
+          </div>
+        </div>
+    </div>
+</section>
+<hr class="bg-blue-200 h-1">
+
+
+
+
+
+
+
+
+
+  <footer class="bg-gray-300 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <img src="logo.png" alt="logo" height="100px" width="100px">
+      <p class="text-sm text-blue-700 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023
+        FrostApparels
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+            viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+            viewBox="0 0 24 24">
+            <path
+              d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+            </path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none"
+              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
+</body>
+
+</html>
